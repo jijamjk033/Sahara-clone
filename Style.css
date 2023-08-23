@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(Images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor:pointer;
+
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+nav{  
+flex: 1;
+text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 13px;
+    text-transform :uppercase;
+    transition: transform 0.5s;
+}
+
+nav ul li a:hover{
+    transform: translateX(-5px);  
+}
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+    position: relative;
+}
+.left-col{
+   flex-basis: 50%;
+}
+.right-col{
+    flex-basis: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+h1{
+    color: #fff;
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+h5{
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+
+p{
+    color: #ffffff;
+    font-size: 11px;
+    line-height: 15px;
+}
+.card p{
+    font-size: 8px;
+}
+button{
+    color: black;
+    background-color: #fff;
+    width: 180px;
+    font-size: 12px;
+    padding: 12px 0;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+button:hover{
+    transform: translateY(-5px);  
+}
+.card{
+    width: 200px;
+    height: 230px;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing:border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card-1{
+    background-image: url(Images/pic-1.png);
+}
+.card-2{
+    background-image: url(Images/pic-2.png);
+}
+.card-3{
+    background-image: url(Images/pic-3.png);
+}
+.card-4{
+    background-image: url(Images/pic-4.png);
+}
+.card:hover{
+ transform: translateY(-10px);
+}
